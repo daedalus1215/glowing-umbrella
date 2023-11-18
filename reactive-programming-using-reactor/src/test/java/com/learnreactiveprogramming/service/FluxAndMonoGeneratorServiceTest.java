@@ -11,8 +11,6 @@ class FluxAndMonoGeneratorServiceTest {
 
     @Test
     void namesFlux_noArgument_shouldReturnExpected() {
-        // Arrange
-
         // Act
         Flux<String> actual = target.namesFlux();
 
@@ -22,4 +20,25 @@ class FluxAndMonoGeneratorServiceTest {
                 .verifyComplete();
     }
 
+    @Test
+    void namesFlux_noArgument_shouldReturnExpectedCount() {
+        // Arrange & Act
+        Flux<String> actual = target.namesFlux();
+
+        // Assert
+        StepVerifier.create(actual)
+                .expectNextCount(3)
+                .verifyComplete();
+    }
+
+    @Test
+    void namesFluxTransformation_noArgument_shouldReturnExpected() {
+        // Arrange & Act
+        Flux<String> actual = target.namesFluxTransformation();
+
+        // Assert
+        StepVerifier.create(actual)
+                .expectNext("ALEX", "BEN", "CHLOE")
+                .verifyComplete();
+    }
 }
