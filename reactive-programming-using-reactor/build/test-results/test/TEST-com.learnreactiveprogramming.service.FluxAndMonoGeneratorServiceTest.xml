@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.learnreactiveprogramming.service.FluxAndMonoGeneratorServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-18T20:11:28" hostname="MacBook-Pro.attlocal.net" time="0.065">
+  <properties/>
+  <testcase name="namesFlux()" classname="com.learnreactiveprogramming.service.FluxAndMonoGeneratorServiceTest" time="0.065"/>
+  <system-out><![CDATA[15:11:29.041 [Test worker] DEBUG reactor.util.Loggers$LoggerFactory - Using Slf4j logging framework
+15:11:29.055 [Test worker] INFO reactor.Flux.Iterable.1 - | onSubscribe([Synchronous Fuseable] FluxIterable.IterableSubscription)
+15:11:29.056 [Test worker] INFO reactor.Flux.Iterable.1 - | request(unbounded)
+15:11:29.057 [Test worker] INFO reactor.Flux.Iterable.1 - | onNext(Alex)
+15:11:29.057 [Test worker] INFO reactor.Flux.Iterable.1 - | onNext(Ben)
+15:11:29.057 [Test worker] INFO reactor.Flux.Iterable.1 - | onNext(Chloe)
+15:11:29.057 [Test worker] INFO reactor.Flux.Iterable.1 - | onComplete()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

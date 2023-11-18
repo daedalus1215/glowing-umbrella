@@ -1,0 +1,7 @@
+d15:11:29.041 [Test worker] DEBUG reactor.util.Loggers$LoggerFactory - Using Slf4j logging framework
+‚15:11:29.055 [Test worker] INFO reactor.Flux.Iterable.1 - | onSubscribe([Synchronous Fuseable] FluxIterable.IterableSubscription)
+O15:11:29.056 [Test worker] INFO reactor.Flux.Iterable.1 - | request(unbounded)
+I15:11:29.057 [Test worker] INFO reactor.Flux.Iterable.1 - | onNext(Alex)
+H15:11:29.057 [Test worker] INFO reactor.Flux.Iterable.1 - | onNext(Ben)
+J15:11:29.057 [Test worker] INFO reactor.Flux.Iterable.1 - | onNext(Chloe)
+I15:11:29.057 [Test worker] INFO reactor.Flux.Iterable.1 - | onComplete()

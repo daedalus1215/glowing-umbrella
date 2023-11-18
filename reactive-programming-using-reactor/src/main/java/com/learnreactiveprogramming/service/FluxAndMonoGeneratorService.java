@@ -23,7 +23,7 @@ public class FluxAndMonoGeneratorService {
 
     public Flux<String> namesFlux() {
         // simulate db or remote data source
-        return Flux.fromIterable(List.of("Alex", "Ben", "Chloe"));
+        return Flux.fromIterable(List.of("Alex", "Ben", "Chloe")).log();
     }
 
     public Mono<String> nameMono() {

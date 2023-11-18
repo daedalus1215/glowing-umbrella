@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/reactive-programming-using-reactor/reactive-spring-webflux.reactive-programming-using-reactor.main.iml" filepath="$PROJECT_DIR$/.idea/modules/reactive-programming-using-reactor/reactive-spring-webflux.reactive-programming-using-reactor.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reactive-programming-using-reactor/reactive-spring-webflux.reactive-programming-using-reactor.test.iml" filepath="$PROJECT_DIR$/.idea/modules/reactive-programming-using-reactor/reactive-spring-webflux.reactive-programming-using-reactor.test.iml" />
     </modules>
   </component>
 </project>
