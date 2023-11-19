@@ -1,7 +1,0 @@
-d15:22:10.367 [Test worker] DEBUG reactor.util.Loggers$LoggerFactory - Using Slf4j logging framework
-}15:22:10.376 [Test worker] INFO reactor.Flux.MapFuseable.1 - | onSubscribe([Fuseable] FluxMapFuseable.MapFuseableSubscriber)
-R15:22:10.378 [Test worker] INFO reactor.Flux.MapFuseable.1 - | request(unbounded)
-L15:22:10.378 [Test worker] INFO reactor.Flux.MapFuseable.1 - | onNext(ALEX)
-K15:22:10.378 [Test worker] INFO reactor.Flux.MapFuseable.1 - | onNext(BEN)
-M15:22:10.378 [Test worker] INFO reactor.Flux.MapFuseable.1 - | onNext(CHLOE)
-L15:22:10.378 [Test worker] INFO reactor.Flux.MapFuseable.1 - | onComplete()
