@@ -28,7 +28,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
+	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo' // for integ tests, it will spin up an embedded mongo db (so we don't need the db on our machine)
 	testImplementation 'io.projectreactor:reactor-test'
 }
 
