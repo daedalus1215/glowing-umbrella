@@ -1,5 +1,6 @@
 package com.reactivespring.repository;
 
+import com.reactivespring.MovieInfoDataFixture;
 import com.reactivespring.domain.MovieInfo;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -25,21 +26,7 @@ class MovieInfoRepositoryIntegrationTest {
 
     @BeforeEach
     void setUp() {
-        target.saveAll(of(new MovieInfo(null,
-                                "Batman Begins",
-                                2005,
-                                of("Christian Bale", "Michael Cane"),
-                                LocalDate.parse("2005-06-15")),
-                        new MovieInfo(null,
-                                "The Dark Knight",
-                                2008,
-                                of("Christian Bale", "Michael Cane"),
-                                LocalDate.parse("2008-06-15")),
-                        new MovieInfo("abc",
-                                "Dark Knight Rises",
-                                2012,
-                                of("Christian Bale", "Michael Cane"),
-                                LocalDate.parse("2012-06-15"))))
+        target.saveAll(MovieInfoDataFixture.getMovieInfos())
                 .blockLast();
     }
 
