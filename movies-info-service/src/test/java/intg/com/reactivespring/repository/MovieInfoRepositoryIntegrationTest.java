@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 import org.springframework.test.context.ActiveProfiles;
 import reactor.core.publisher.Flux;
+import reactor.test.StepVerifier;
 
 import java.time.LocalDate;
 
@@ -48,12 +49,12 @@ class MovieInfoRepositoryIntegrationTest {
 
     @Test
     void findAll_noArg_willReturnExpectedFlux() {
-        // Arrange
-
-        // Act
+        // Arrange & Act
         Flux<MovieInfo> actual = target.findAll();
 
         // Assert
-
+        StepVerifier.create(actual)
+                .expectNextCount(3)
+                .verifyComplete();
     }
 }
